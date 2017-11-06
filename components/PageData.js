@@ -1,10 +1,10 @@
 import React, { PropTypes } from 'react';
-import { View, Text } from 'react-native';
+import { View, Text, KeyboardAvoidingView } from 'react-native';
 
 const Page = ({ width, height, children }) => (
-  <View style={{ width, height }}>
+  <KeyboardAvoidingView behavior="padding" style={{ width, height }}>
     { children }
-  </View>
+  </KeyboardAvoidingView>
 );
 
 const PageContent = ({ children }) => (
